@@ -1,0 +1,92 @@
+body{
+  background-color: rgb(50, 50, 50);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1, h2{
+  text-align: center;
+  color: #809DFF;
+}
+section{
+  width:90%;
+  margin: 0 auto;
+}
+a{
+  color: white;
+}
+.intro{
+  width: 100%;
+}
+.intro p{
+  max-width: 90%;
+  margin: 0 auto;
+}
+.project{
+  background-color: rgb(40, 40, 40);
+  box-shadow: 2px 2px 5px 0px white;
+  border-radius: 0.3rem;
+  margin-block: 1rem; 
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.project > *{
+  padding: 0.5rem;
+}
+.project h2{
+  text-align: center;
+}
+.project .image{
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  height: auto;
+  
+}
+.project .image a{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.project .image a img{
+  padding: 0;
+  margin: 0;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0 0 0.3rem 0.3rem;
+  aspect-ratio: 16/8;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgb(40, 40, 40);
+  padding: 1rem;
+}
+.social >*{
+  width: 5rem;
+  height: auto;
+}
+@media (min-width: 1250px){
+  main{
+    min-height: calc(100vh - 168px);
+    width: 80%;
+    margin-inline: auto;
+  }
+  .cards{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .project{
+    margin-inline: 0.5rem;
+  }
+}
